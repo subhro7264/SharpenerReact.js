@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.app-header{
+  
+    background-color: aqua;
+    box-sizing: border-box;
+    font-weight: bolder;  
+    border-radius: 20px; 
+    width:100%vw;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
