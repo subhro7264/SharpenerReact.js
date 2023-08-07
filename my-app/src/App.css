@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,7 +23,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.app-body{
+  background-color: rgb(72, 33, 92);
+  width: 100%vw;
+  height: 100%vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,15 +44,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-.app-header{
-  
-    background-color: aqua;
-    box-sizing: border-box;
-    font-weight: bolder;  
-    border-radius: 20px; 
-    width:100%vw;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
 }

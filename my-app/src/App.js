@@ -1,8 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ExpenseItem from "./component/ExpenseItem";
+// import ExpenseItem from "./component/ExpenseItem";
+import React from 'react';
+import Expenses from './component/Expenses/Expenses';
 
-function App() {
+
+const App=()=> {
   const expenses = [
     {
       id: "e1",
@@ -35,32 +38,10 @@ function App() {
   ];
   return (
     <div className="App">
-      <h1 className="app-header"> Expense Item!</h1>
-
-      <ExpenseItem
-        title={expenses[0].title}
-        location={expenses[0].location}
-        ammount={expenses[0].ammount}
-        date={expenses[0].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[1].title}
-        location={expenses[1].location}
-        ammount={expenses[1].ammount}
-        date={expenses[1].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[2].title}
-        location={expenses[2].location}
-        ammount={expenses[2].ammount}
-        date={expenses[2].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[3].title}
-        location={expenses[3].location}
-        ammount={expenses[3].ammount}
-        date={expenses[3].date}
-      ></ExpenseItem>
+    <div className="app-body">
+    <h1>Expense Item!</h1>
+    <Expenses items={expenses} />
+    </div>
     </div>
   );
 }
