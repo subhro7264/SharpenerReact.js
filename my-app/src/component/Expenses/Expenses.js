@@ -3,7 +3,7 @@ import Card from "../UI/Card";
 
 
 function Expenses(props) {
- 
+
     return(
       <Card classNmae="expenses">
         <ExpenseItem

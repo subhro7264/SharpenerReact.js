@@ -1,6 +1,8 @@
 .expense_Date{
-    color: black;
+    /* color: black;
     background-color: rgb(192, 230, 151);
     border-radius:8px;
-    box-shadow: 0 1px  8px  black;
+    box-shadow: 0 1px  8px  black; */
+    color: black;
+    background-color: #9b5de5;
 }
