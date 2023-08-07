@@ -1,0 +1,20 @@
+ .flex{
+    display:flex ;
+    flex-direction: row;
+} 
+
+.expense-item{
+    background-color: rgba(64, 178, 85, 0.718);
+    height:fit-content;
+    width: 40vw;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: center; */
+    flex-wrap: wrap;
+    border-radius: 10px ;
+    overflow: hidden;
+    font-weight: 600;
+    font-size:large;
+
+}

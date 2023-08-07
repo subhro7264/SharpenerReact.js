@@ -1,0 +1,21 @@
+
+
+.expense_details{
+    display: flex;
+ margin: 20px;
+}
+.expense_title{
+   margin: 20px;
+}
+.Location_Of_Expenditure{
+    margin: 20px;
+}
+
+.expense_ammount{
+  margin: 20px;
+  border-radius: 5px;
+  color: blueviolet;
+    background-color: rgb(247, 238, 138);
+    
+
+}
