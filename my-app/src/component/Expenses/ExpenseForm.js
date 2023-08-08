@@ -1,14 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 
 const ExpenseForm = () => {
-  const handleChangeTitle = (event) => {
-    console.log(event.target.value);
+    const[enterTitle, setEnterTitle]=useState('');
+    const[enterAmount, setEnterAmount]=useState('');
+    const[enterDate, setEnterDate]=useState('');
+    const handleChangeTitle = (event) => {
+    setEnterTitle(event.target.value);
   };
 const handleChangeAmount=(event)=>{
-    console.log(event.target.value);
+    setEnterAmount(event.target.value);
 }
 const handleChangeDate=(event)=>{
-    console.log(event.target.value);
+    setEnterDate(event.target.value);
 }
   return (
     <div className="ExpenseForm ">
