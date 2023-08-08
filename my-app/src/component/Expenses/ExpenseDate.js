@@ -16,5 +16,5 @@ const ExpenseDate=(props) =>{
     </Card>
   );
 }
-export default ExpenseDate;
+export default ExpenseDate
 

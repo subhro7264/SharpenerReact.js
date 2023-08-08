@@ -9,7 +9,7 @@ import Expenses from './component/Expenses/Expenses';
 
 
 const App=()=> {
-  const expenses = [
+  const Dummy_Expenses = [
     {
       id: "e1",
       title: "Toilet Paper",
@@ -36,7 +36,7 @@ const App=()=> {
       date: new Date(2018, 7, 15),
     },
   ];
-  const [expense_d,setExpense]=useState(expenses)
+  const [expenses,setExpense]=useState(Dummy_Expenses)
   const addExpenseHandler=(expense)=>{
     setExpense(prevExpense => {
       return [expense,...prevExpense]

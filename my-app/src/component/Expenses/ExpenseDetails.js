@@ -9,4 +9,4 @@ const ExpenseDetails=(props)=>{
         </div>
     )
 }
-export default ExpenseDetails;
+export default ExpenseDetails
