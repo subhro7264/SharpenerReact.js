@@ -32,7 +32,9 @@ const Expenses=(props) =>{
         ammount={props.items[3].ammount}
         date={props.items[3].date}
       ></ExpenseItem>
+
       </Card>
+
     )
-}
+};
 export default Expenses;

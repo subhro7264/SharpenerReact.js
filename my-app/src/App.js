@@ -1,9 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
 // import ExpenseItem from "./component/ExpenseItem";
-import React from 'react';
+import React,{useState} from 'react';
+import NewExpense from "./component/NewExpense/NewExpense";
 import Expenses from './component/Expenses/Expenses';
-import ExpenseForm from "./component/Expenses/ExpenseForm";
+// import ExpenseForm from "./component/Expenses/ExpenseForm";
+
 
 
 const App=()=> {
@@ -18,30 +20,34 @@ const App=()=> {
     {
       id: "e2",
       title: "New Tv",
-      location: "near home tv house",
       ammount: 1200,
       date: new Date(2021, 8, 11),
     },
     {
       id: "e3",
       title: "Car Insurance",
-      location: "New town car center",
       ammount: 294.67,
       date: new Date(2019, 5, 27),
     },
     {
       id: "e4",
       title: "Eductaion",
-      location: "Oxford University",
       ammount: 200,
-      date: new Date(2018, 7, 2),
+      date: new Date(2018, 7, 15),
     },
   ];
+  const [expense_d,setExpense]=useState(expenses)
+  const addExpenseHandler=(expense)=>{
+    setExpense(prevExpense => {
+      return [expense,...prevExpense]
+    })
+  }
   return (
     <div className="App">
     <div className="app-body">
-    <ExpenseForm/>
-    <Expenses items={expenses} />
+    <NewExpense onAddExpense={addExpenseHandler}/>
+    <Expenses items={expenses}/>
+   
     
     </div>
     </div>

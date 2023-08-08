@@ -13,18 +13,18 @@
   }
 }
 
-.App {
-  background-color: #282c34;
+ .App { 
+  background-color: #42451ad4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
-}
-.app-body{
-  background-color: #00bbf9;
+  color: rgb(255, 255, 255);
+} 
+/* .app-body{
+  background-color: #00bbf937;
   width: 100%vw;
   height: 100%vh;
   display: flex;
@@ -33,6 +33,9 @@
   border-radius: 20px;
   
   
+}  */
+.app-body{
+  background-color: rgba(204, 123, 196, 0.352);
 }
 .App-link {
   color: #61dafb;

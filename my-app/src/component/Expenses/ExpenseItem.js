@@ -13,13 +13,11 @@ const ExpenseItem = (props) => {
 
   return (
     <>
-      <Card className="expense-item flex delete">
+      <Card className="expense-item ">
         <ExpenseDate date={props.date} />
 
         <ExpenseDetails
-       
           title={props.title}
-          location={props.location}
           ammount={ammount}
         />
        
