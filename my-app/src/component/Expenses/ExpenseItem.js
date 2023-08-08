@@ -23,7 +23,7 @@ const ExpenseItem = (props) => {
           ammount={ammount}
         />
        
-        <button onClick={deleteExpenseBtn}>Delete</button>
+        <button onClick={deleteExpenseBtn}>Change</button>
       </Card>
     </>
   );

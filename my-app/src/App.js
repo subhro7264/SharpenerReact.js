@@ -3,6 +3,7 @@ import "./App.css";
 // import ExpenseItem from "./component/ExpenseItem";
 import React from 'react';
 import Expenses from './component/Expenses/Expenses';
+import ExpenseForm from "./component/Expenses/ExpenseForm";
 
 
 const App=()=> {
@@ -39,8 +40,9 @@ const App=()=> {
   return (
     <div className="App">
     <div className="app-body">
-    <h1>Expense Item!</h1>
+    <ExpenseForm/>
     <Expenses items={expenses} />
+    
     </div>
     </div>
   );
