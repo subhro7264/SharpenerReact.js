@@ -18,18 +18,47 @@ const filterExpense=props.items.filter((expense)=>{
 
 })
 
+// let expoenseContent=<p>No Expense Found</p>;
+// if(filterExpense.length>0){
+//   expoenseContent=filterExpense.map((expense) => (
+//     <ExpenseItem
+//       key={expense.id}
+//       title={expense.title}
+//       amount={expense.amount}
+//       date={expense.date}
+//     />
+//   ))
+
+// };
+// if(filterExpense.length>=1){
+//   expoenseContent=filterExpense.map((expense) => (
+//     <ExpenseItem
+//       key={expense.id}
+//       title={expense.title}
+//       amount={expense.amount}
+//       date={expense.date}
+//     />
+//     + <p>"Only single Expense here. Please add more..."</p>
+//   ))
+  
+// }
 
   return (
     <Card classNmae="expenses">
       <ExpenseFilter selected={filterYear} onChangeFilter={filterYearHandler} />
-      {filterExpense.map((expense) => (
+       {filterExpense.length===0 && <p>No Expense Found</p> }
+     
+      {filterExpense.length >0  && filterExpense.map((expense) => (
         <ExpenseItem
           key={expense.id}
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
         />
-      ))}
+      ))} 
+       {filterExpense.length===1 && <p>"Only single Expense here. Please add more..."</p> }
+      {/* {expoenseContent} */}
+     
     </Card>
   );
 };
