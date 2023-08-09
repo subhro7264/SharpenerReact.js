@@ -6,10 +6,10 @@ import ExpenseDetails from "./ExpenseDetails";
 import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
-  const [ammount, setAmmount] = useState(props.ammount);
-  const deleteExpenseBtn = () => {
-    setAmmount(100);
-  };
+  // const [amount, setAmmount] = useState(props.amount);
+  // const deleteExpenseBtn = () => {
+  //   setAmmount(100);
+  // };
 
   return (
     <>
@@ -18,10 +18,11 @@ const ExpenseItem = (props) => {
 
         <ExpenseDetails
           title={props.title}
-          ammount={ammount}
+          amount={props.amount}
+        //  amount={amount}
         />
        
-        <button onClick={deleteExpenseBtn}>Change</button>
+        {/* <button onClick={deleteExpenseBtn}>Change</button> */}
       </Card>
     </>
   );
