@@ -23,7 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
 } 
-/* .app-body{
+ /* .app-body{
   background-color: #00bbf937;
   width: 100%vw;
   height: 100%vh;
@@ -33,9 +33,9 @@
   border-radius: 20px;
   
   
-}  */
+}   */
 .app-body{
-  background-color: rgba(204, 123, 196, 0.352);
+  background-color: rgba(227, 79, 212, 0.208);
 }
 .App-link {
   color: #61dafb;
