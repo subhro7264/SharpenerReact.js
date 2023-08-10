@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import ExpenseItem from "./ExpenseItem";
+// import ExpenseItem from "./ExpenseItem";
 import ExpenseFilter from "./ExpenseFilter";
 import ExpenseChart from "./ExpenseChart";
+import ExpenseList from "./ExpenseList";
 
 import Card from "../UI/Card";
 
@@ -48,8 +49,9 @@ const filterExpense=props.items.filter((expense)=>{
     <Card classNmae="expenses">
       <ExpenseFilter selected={filterYear} onChangeFilter={filterYearHandler} />
 
-      <ExpenseChart expenses={filterExpense}/>
-       {filterExpense.length===0 && <p>No Expense Found</p> }
+       <ExpenseChart expenses={filterExpense}/>
+ 
+       {/* {filterExpense.length===0 && <p>No Expense Found</p> }
      
       {filterExpense.length >0  && filterExpense.map((expense) => (
         <ExpenseItem
@@ -60,8 +62,8 @@ const filterExpense=props.items.filter((expense)=>{
         />
       ))} 
        {filterExpense.length===1 && <p>"Only single Expense here. Please add more..."</p> }
-      {/* {expoenseContent} */}
-     
+      {expoenseContent} \ */}
+     <ExpenseList items={filterExpense} />
     </Card>
   );
 };

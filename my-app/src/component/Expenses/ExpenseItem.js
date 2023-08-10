@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Card from "../UI/Card";
-import ExpenseDate from "./ExpenseDate";
+// import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
 
 import "./ExpenseItem.css";
@@ -11,22 +11,18 @@ const ExpenseItem = (props) => {
   // const deleteExpenseBtn = () => {
   //   setAmmount(100);
   // };
-  
 
   return (
-    <>
-      <Card className="expense-item ">
-        <ExpenseDate date={props.date} />
-
-        <ExpenseDetails
-          title={props.title}
-          amount={props.amount}
+    <Card className="expense ">
+      <ExpenseDetails
+        date={props.date}
+        title={props.title}
+        amount={props.amount}
         //  amount={amount}
-        />
-       
-        {/* <button onClick={deleteExpenseBtn}>Change</button> */}
-      </Card>
-    </>
+      />
+
+      {/* <button onClick={deleteExpenseBtn}>Change</button> */}
+    </Card>
   );
 };
-export default ExpenseItem
+export default ExpenseItem;

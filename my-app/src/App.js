@@ -18,7 +18,7 @@ const Dummy_Expenses = [
     id: "e2",
     title: "New Tv",
     amount: 1200,
-    date: new Date(2021, 8, 11),
+    date: new Date(2020, 8, 11),
   },
   {
     id: "e3",
@@ -36,7 +36,7 @@ const Dummy_Expenses = [
 
 const App=()=> {
   
-  const [expenses,setExpense]=useState(Dummy_Expenses)
+  const [expenses, setExpense]=useState(Dummy_Expenses)
   
   const addExpenseHandler=(expense)=>{
     setExpense(prevExpense => {
