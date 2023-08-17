@@ -1,0 +1,58 @@
+.form{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(240, 248, 255, 0.177);
+    border-radius: 12px;
+}
+
+.orderId{
+    margin: .2rem;
+    color: aqua;
+}
+
+.orderId Input{
+border-radius: 8px;
+width: 14vw;
+background-color: rgb(230, 227, 223);
+}
+.orderPrice{
+    margin: .2rem;
+    color: aqua;
+}
+.orderPrice Input{
+border-radius: 8px;
+width: 12.5vw;
+}
+
+.chooseDish{
+    margin: .2rem;
+    color: aqua;
+}
+.chooseDish Input{
+    border-radius: 8px;
+    width: 12vw;
+}
+.table{
+    color: aqua;
+}
+.table select{
+    border-radius: 8px;
+    width: 11vw;
+}
+
+.table option{
+   background-color: aqua;
+}
+.button{
+    margin-left: 25%;
+    border-radius: 8px;
+    width: 11vw;
+    background-color: rgb(176, 130, 219);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+}
+.button:hover{
+    background-color: yellow;
+}
